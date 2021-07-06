@@ -1,14 +1,42 @@
 import React from "react";
 import Header from "./Header";
+import './App.css';
 
 function App() {
+
+  let subscribers = [
+    {
+      id: 1,
+      name: "Shilpa",
+      phone: "8888888888"
+    },
+    {
+      id: 2,
+      name: "Srishti",
+      phone: "9999999999"
+    }
+  ]
+
   return (
     <div>
       <Header />
-      <button>Add</button>
-      <div>
-        <span>Name</span> <br />
-        <span>Phone</span>
+
+      <div className="body-container">
+        <button className="custom-btn add-btn">Add</button>
+        <div className="grid-container heading-container">
+          <span>Name</span>
+          <span>Phone</span>
+        </div>        
+        
+        {
+          subscribers.map(sub => {
+            return <div key={sub.id} className="grid-container">
+              <span className="grid-item">{sub.name}</span>
+              <span className="grid-item">{sub.phone}</span>
+            </div>
+          })
+        }
+
       </div>
     </div>
   );

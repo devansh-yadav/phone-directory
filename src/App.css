@@ -1,0 +1,55 @@
+body {
+    margin: 0.3em;
+}
+.header {
+    text-align: center;
+    padding: 1.25em;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+
+.body-container {
+    padding: 1.5em;
+}
+
+.custom-btn {
+    padding: 0.7em 1.6em;
+    border: none;
+    font-size: 0.9rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.add-btn{
+    background-color: green;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 30% auto;
+    font-size: 1.15rem;
+    /* border: 2px solid black; */
+}
+
+.heading-container {
+    margin: 1.75em 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5em;
+    font-size: 1.15rem;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+
+
+
