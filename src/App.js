@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header heading = "Phone Directory"/>
 
       <div className="body-container">
 
