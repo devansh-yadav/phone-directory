@@ -8,7 +8,18 @@ class PhoneDirectory extends Component {
     constructor() {
         super();
         this.state = {
-            subscribersList: []
+            subscribersList: [
+                {
+                    id: 0,
+                    name: 'Srishti',
+                    phone: '9999999999'
+                },
+                {
+                    id: 0,
+                    name: 'Rahul',
+                    phone: '5555555555'
+                },
+            ]
         }
     }
 

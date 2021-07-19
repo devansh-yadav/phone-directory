@@ -12,6 +12,8 @@ class AddSubscriber extends Component {
             name: '',
             phone: ''
         }
+        this.inputChangedHandler = this.inputChangedHandler.bind(this)
+        this.onFormSubmitted = this.onFormSubmitted.bind(this)
     }
 
     inputChangedHandler = (e) => {
@@ -33,7 +35,7 @@ class AddSubscriber extends Component {
                 <Header heading="Add Subscriber" />
                 <div className="body-container">
                     <Link to='/'><button className="custom-btn">Back</button></Link>
-                    <form className="subscriber-form" onSubmit={this.onFormSubmitted.bind(this)}>
+                    <form className="subscriber-form" onSubmit={this.onFormSubmitted}>
                         <label htmlFor="name" className="label-control">Name: </label> <br/>
                         <input id="name" type="text" className="input-control" name="name" onChange={this.inputChangedHandler}/> <br/> <br/>
                         <label htmlFor="phone" className="label-control">Phone: </label> <br/>
